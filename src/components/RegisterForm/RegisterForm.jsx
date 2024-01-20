@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/operations';
+import { signup } from '../../redux/auth/operations';
 import { Form, Label, Input, Button } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
@@ -10,7 +10,7 @@ export const RegisterForm = () => {
         const form = event.currentTarget;
 
         dispatch(
-            register({
+            signup({
                 name: form.elements.name.value,
                 email: form.elements.email.value,
                 password: form.elements.password.value,
