@@ -4,7 +4,7 @@ export const AuthNav = () => {
 
     return (
         <Wrapper>
-            <Link to="/register">Register</Link>{' '}
+            <Link to="/signup">Sign Up</Link>{' '}
             <Link to="/login">Log In</Link>{' '}
         </Wrapper>
     );

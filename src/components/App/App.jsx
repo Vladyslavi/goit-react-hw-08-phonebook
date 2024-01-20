@@ -9,7 +9,7 @@ import { useAuth } from '../../hooks/useAuth';
 import { Wrapper } from './App.styled';
 
 const Home = lazy(() => import('pages/Home'));
-const Register = lazy(() => import('pages/Register'));
+const Register = lazy(() => import('pages/signup'));
 const Login = lazy(() => import('pages/Login'));
 const Contacts = lazy(() => import('pages/Contacts'));
 
@@ -28,7 +28,7 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route
-            path="/register"
+            path="/signup"
             element={
               <RestrictedRoute redirectTo="/login" component={<Register />} />
             }

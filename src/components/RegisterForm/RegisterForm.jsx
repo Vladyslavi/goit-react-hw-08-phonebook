@@ -54,7 +54,7 @@ export const RegisterForm = () => {
                     required
                 />
             </Label>
-            <Button type="submit">Register</Button>
+            <Button type="submit">Sign Up</Button>
         </Form>
     );
 };
