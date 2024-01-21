@@ -46,7 +46,7 @@ export const App = () => {
             }
           />
         </Route>
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Wrapper>
   );
